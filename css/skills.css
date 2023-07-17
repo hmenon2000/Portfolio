@@ -1,0 +1,177 @@
+@import url('https://fonts.google.com/specimen/Roboto+Slab');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'roboto slab',sans-serif;
+}
+body{
+    background-image: radial-gradient(to left, rgb(34,61,85) , rgb(70,106,141));
+
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10% ;
+    background: transparent;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    pointer-events: none;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+}
+.navbar a{
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    text-decoration:none;
+    font-weight: 500;
+    margin-left: 35px;
+    opacity: 0;
+    animation: slideTop 5s ease forwards;
+    animation-delay: calc(.2s*var(--i));
+
+}
+.navbar a.active,
+.navbar a:hover{
+    background: rgb(2,0,36);
+    background: rgb(8,1,127);
+    background: linear-gradient(90deg, rgba(8,1,127,1) 0%, rgba(19,202,148,1) 47%, rgba(0,108,255,1) 100%);    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+
+
+}
+@keyframes slideTop{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+        
+    }
+}
+@keyframes slideRight{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+        
+    }
+}
+@keyframes slideLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+        
+    }
+}
+
+@keyframes slideBottom{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+        
+    }
+}
+@keyframes zoomIn{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes floatImage{
+    0%{
+        transform: translateY(0);
+    }
+}
+    @keyframes floatImage{
+        50%{
+            transform: translateY(-24px);
+        }
+    }
+    
+    @keyframes floatImage{
+        100%{
+            transform: translateY(0);
+        }
+    
+}
+.sizes{
+width: 1505;
+height: 400;
+/* opacity: 0.5; */
+}
+
+
+.skills {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin-top: 200px;
+    font-weight: 700;
+    font-family: robotoslab;
+    
+}
+/* 
+
+.container-fluid{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.py-5 {
+    padding-top: 3rem !important;
+  }
+  .position-relative {
+    position: relative !important;
+  }
+  .d-flex {
+    display: flex !important;
+  }
+  .align-items-center {
+    align-items: center !important;
+  }
+
+  .justify-content-center {
+    justify-content: center !important;
+  }
+  .display-1 {
+    font-size: 10rem;
+    font-weight: 300;
+    line-height: 1.2;
+  } */
