@@ -31,6 +31,10 @@ body{
     opacity: 0;
     animation: slideTop 1s ease forwards;
 }
+.img1{
+    width: 10%;
+    height: 10%;
+}
 .navbar a{
     display: inline-block;
     font-size: 18px;
